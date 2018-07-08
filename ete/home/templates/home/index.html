@@ -11,74 +11,101 @@
     <link rel="stylesheet" href="{% static 'home/style.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-        crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+          crossorigin="anonymous">
 
 
 </head>
 
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
-                <!-- Title -->
-                <span class="mdl-layout-title">ETƎ</span>
-                <!-- Add spacer, to align navigation to the right -->
-                <div class="mdl-layout-spacer"></div>
-                <!-- Navigation. We hide it in small screens. -->
-                <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link active" href="">Home</a>
-                    <a class="mdl-navigation__link" href="">Tour</a>
-                    <a class="mdl-navigation__link" href="">Music</a>
-                    <a class="mdl-navigation__link" href="">Bio</a>
-                    <a class="mdl-navigation__link" href="">Contact</a>
-                </nav>
-                <div class="mdl-layout-spacer"></div>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
             <span class="mdl-layout-title">ETƎ</span>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">Home</a>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link active" href="">Home</a>
                 <a class="mdl-navigation__link" href="">Tour</a>
                 <a class="mdl-navigation__link" href="">Music</a>
                 <a class="mdl-navigation__link" href="">Bio</a>
                 <a class="mdl-navigation__link" href="">Contact</a>
             </nav>
+            <div class="mdl-layout-spacer"></div>
         </div>
-        <main class="mdl-layout__content">
-            <div class="page-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col mt-4 text-center">
-                            <button class="ml-2 mr-2 mdl-button mdl-js-button mdl-button--icon social-button">
-                                <i class="fab fa-facebook-square"></i>
-                            </button>
-                            <button class="ml-2 mr-2 mdl-button mdl-js-button mdl-button--icon social-button">
-                                <i class="fab fa-instagram"></i>
-                            </button>
-                            <button class="ml-2 mr-2 mdl-button mdl-js-button mdl-button--icon social-button">
-                                <i class="fab fa-twitter-square"></i>
-                            </button>
-                            <button class="ml-2 mr-2 mdl-button mdl-js-button mdl-button--icon social-button">
-                                <i class="fab fa-spotify"></i>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">ETƎ</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Home</a>
+            <a class="mdl-navigation__link" href="">Tour</a>
+            <a class="mdl-navigation__link" href="">Music</a>
+            <a class="mdl-navigation__link" href="">Bio</a>
+            <a class="mdl-navigation__link" href="">Contact</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col mt-5 text-center">
+                        <button class="ml-2 mr-2 mdl-button mdl-js-button mdl-button--icon social-button">
+                            <i class="fab fa-facebook-square"></i>
+                        </button>
+                        <button class="ml-2 mr-2 mdl-button mdl-js-button mdl-button--icon social-button">
+                            <i class="fab fa-instagram"></i>
+                        </button>
+                        <button class="ml-2 mr-2 mdl-button mdl-js-button mdl-button--icon social-button">
+                            <i class="fab fa-twitter-square"></i>
+                        </button>
+                        <button class="ml-2 mr-2 mdl-button mdl-js-button mdl-button--icon social-button">
+                            <i class="fab fa-spotify"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <h6 class="text-center">Join our mailing list to get updates on new music.</h6>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col">
+                    <div class="row m-0 p-0">
+                        <div class="col m-0 p-0 mt-3 text-center">
+                            <input class="mail-input" type="text" id="sample1" placeholder="Your email.">
+                        </div>
+                        <div class="col-sm-12 col-md-2 m-0 p-0 text-md-left text-center mt-3">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                                sign up
                             </button>
                         </div>
                     </div>
                 </div>
+                <div class="col-2 d-none d-md-block"></div>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
+</div>
 
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
 

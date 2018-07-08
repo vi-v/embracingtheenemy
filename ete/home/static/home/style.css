@@ -37,3 +37,20 @@ header.mdl-layout__header {
 .social-button i {
     color: #BDBDBD;
 }
+
+.mail-input {
+    width: 98%;
+    height: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    border-radius: 0.2rem;
+    border: 0;
+    background-color: #F5F5F5;
+    color: #616161;
+    padding: 10px;
+}
+
+.mail-input:focus, .mail-input:focus{
+    outline: none;
+}
