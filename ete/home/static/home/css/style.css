@@ -59,3 +59,8 @@ header.mdl-layout__header {
 .mail-input:focus, .mail-input:focus{
     outline: none;
 }
+
+.instagram-img {
+    max-width: 500px;
+    width: 100%;
+}
