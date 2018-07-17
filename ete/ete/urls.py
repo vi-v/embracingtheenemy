@@ -15,11 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import handler404
 from home.views import HomeView
 from bio.views import BioView
+from ete import views as ete_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomeView.as_view()),
     path('bio/', BioView.as_view())
 ]
+
+handler404 = ete_views.handler404
