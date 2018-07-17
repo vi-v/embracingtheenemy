@@ -27,15 +27,15 @@
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <!-- Title -->
-{#            <span class="mdl-layout-title">ETƎ</span>#}
+            <span class="mdl-layout-title">ETƎ</span>
             <!-- Add spacer, to align navigation to the right -->
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link active" href="/">Home</a>
+                <a class="mdl-navigation__link" href="/">Home</a>
                 <a class="mdl-navigation__link" href="">Tour</a>
                 <a class="mdl-navigation__link" href="">Music</a>
-                <a class="mdl-navigation__link" href="bio/">Bio</a>
+                <a class="mdl-navigation__link active" href="bio/">Bio</a>
                 <a class="mdl-navigation__link" href="">Contact</a>
             </nav>
             <div class="mdl-layout-spacer"></div>
@@ -54,76 +54,19 @@
     <main class="mdl-layout__content">
         <div class="page-content">
             <div class="container mb-5">
-                <div class="row mt-3 justify-content-center">
-                    <h1 class="text-center" style="font-size: 10em; font-family: Roboto, sans-serif;">ETƎ</h1>
-                </div>
-                <div class="row">
-                    <div class="col mt-5 text-center">
-                        <a href="https://www.facebook.com/embracingtheenemy/" target="_blank"
-                           style="display: inline-block">
-                            <button class="ml-2 mr-2 mdl-button mdl-js-button mdl-button--icon social-button">
-                                <i class="fab fa-facebook-square"></i>
-                            </button>
-                        </a>
-                        <a href="https://www.instagram.com/embracingtheenemy/" target="_blank"
-                           style="display: inline-block">
-                            <button class="ml-2 mr-2 mdl-button mdl-js-button mdl-button--icon social-button">
-                                <i class="fab fa-instagram"></i>
-                            </button>
-                        </a>
-                        <a href="https://twitter.com/ETEBANDOFFICIAL" target="_blank" style="display: inline-block">
-                            <button class="ml-2 mr-2 mdl-button mdl-js-button mdl-button--icon social-button">
-                                <i class="fab fa-twitter-square"></i>
-                            </button>
-                        </a>
-                        <a href="https://open.spotify.com/artist/1C4MebOQRBzemEpQz6jV42" target="_blank"
-                           style="display: inline-block">
-                            <button class="ml-2 mr-2 mdl-button mdl-js-button mdl-button--icon social-button">
-                                <i class="fab fa-spotify"></i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col text-center">
-                        <h6 class="text-center">Join our mailing list to get updates on new music.</h6>
-                    </div>
-                </div>
-
-                <div class="row mt-2">
-                    <div class="col-1 d-none d-md-block"></div>
-                    <div class="col">
-                        <div class="row m-0 p-0">
-                            <div class="col m-0 p-0 mt-3 text-center">
-                                <input class="mail-input" type="text" id="sample1" placeholder="Your email.">
-                            </div>
-                            <div class="col-sm-12 col-md-2 m-0 p-0 text-md-left text-center mt-3">
-                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-                                    sign up
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1 d-none d-md-block"></div>
-                </div>
-
                 <div class="row mt-5">
                     <div class="col-md-8 col-sm-12">
                         <div class="row">
                             <div class="col">
-                                <h3>NEWS FEED</h3>
+                                <h1>BIO</h1>
                             </div>
                         </div>
 
-                        <div class="row mt-3">
+                        <div class="row">
                             <div class="col">
-                                <h5>New Album 2018</h5>
-                                <img src="{% static 'home/images/anomaly_art.jpg' %}" alt="" style="max-width: 100%">
-                                <p class="mt-2" style="font-size: 18px">
-                                    We are excited to announce the release of our new album <i>The Anomaly</i> this
-                                    August.
-                                </p>
+                                {% for paragraph in content_paragraphs %}
+                                    <p class="mt-2">{{ paragraph }}</p>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>

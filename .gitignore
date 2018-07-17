@@ -1,1 +1,4 @@
 venv/
+**/.idea/
+ete/db.sqlite3
+ete/.idea/
