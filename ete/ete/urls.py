@@ -21,5 +21,5 @@ from bio.views import BioView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomeView.as_view()),
-    path('bio', BioView.as_view())
+    path('bio/', BioView.as_view())
 ]

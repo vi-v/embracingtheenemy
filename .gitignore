@@ -3,3 +3,4 @@ venv/
 ete/db.sqlite3
 ete/.idea/
 static/
+**/__pycache__/
