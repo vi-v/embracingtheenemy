@@ -56,11 +56,35 @@ header.mdl-layout__header {
     padding: 10px;
 }
 
-.mail-input:focus, .mail-input:focus{
+.mail-input:focus, .mail-input:focus {
     outline: none;
 }
 
 .instagram-img {
     max-width: 500px;
     width: 100%;
+}
+
+.video-link {
+	position: relative;
+}
+.video-link .text {
+		position: absolute;
+    top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.video-link .text h1 {
+		margin: 0;
+		color: white;
+}
+.video-link:hover .text {
+	opacity: 1;
+
+}
+.video-link:hover img {
+	-webkit-filter: sepia(90%);
 }

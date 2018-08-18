@@ -79,21 +79,24 @@
                             </div>
                         </div>
 
-                        <div class="row mt-4">
-                            <div class="col">
-                                <img src="{% static 'home/images/instagram/ete1.jpg' %}" class="instagram-img" alt="">
+                        {% for media in ig_media %}
+                            <div class="row mt-4">
+                                <div class="col">
+                                    {% if media.is_video %}
+                                        <a href="https://www.instagram.com/p/{{ media.shortcode }}" target="_blank" class="video-link">
+                                            <span class="text">
+                                                <h1>▶</h1>
+                                            </span>
+                                            <img src="{{ media.src }}" class="instagram-img" alt="">
+                                        </a>
+                                    {% else %}
+                                        <a href="https://www.instagram.com/p/{{ media.shortcode }}" target="_blank">
+                                            <img src="{{ media.src }}" class="instagram-img" alt="">
+                                        </a>
+                                    {% endif %}
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col">
-                                <img src="{% static 'home/images/instagram/ete2.jpg' %}" class="instagram-img" alt="">
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col">
-                                <img src="{% static 'home/images/instagram/ete3.jpg' %}" class="instagram-img" alt="">
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
